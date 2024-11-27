@@ -1,0 +1,15 @@
+{
+  "name": "jsbasics_seventh",
+  "version": "1.0.0",
+  "description": "Project to demonstrate class-based examples in JavaScript.",
+  "main": "task1.js",
+  "type": "module",  
+  "scripts": {
+    "start": "node task1.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Book", "EBook", "JavaScript", "Classes", "Node.js"],
+  "author": "Michael",
+  "license": "ISC"
+}
+
