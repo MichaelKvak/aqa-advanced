@@ -1,0 +1,17 @@
+{
+  "name": "jsbasics_eighth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "type": "module", 
+  "scripts": {
+    "start": "node task2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["Book", "EBook", "JavaScript", "Classes", "Node.js", "Promise"],
+  "author": "Michael",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
