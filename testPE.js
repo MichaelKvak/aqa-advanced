@@ -1,3 +1,5 @@
-const ducky =
-	'fegretttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttuy3456u5467ui67i867oi78io768ui678iu675u756u675uyt4u';
+const ducky = true;
+
+const obj = { fixed: 'three' };
+
 let test = 'Test';

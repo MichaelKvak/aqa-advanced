@@ -1,1 +1,11 @@
+files=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(js|ts)$')
+
+if [ -n "$files" ]; then
+  # Запустити ESLint для змінених файлів
   npx eslint $files
+  
+  # Вивести інформацію про середовище ESLint
+  npx eslint --env-info
+else
+  echo "No JavaScript or TypeScript files to lint."
+fi
