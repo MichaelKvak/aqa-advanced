@@ -9,3 +9,7 @@ function free(y, z) {
 
 	return x;
 }
+
+const first = () => {
+	const free = true;
+};
