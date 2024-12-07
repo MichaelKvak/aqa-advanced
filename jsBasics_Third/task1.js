@@ -1,10 +1,10 @@
 function calculateArea(width, height) {
-return width * height
+	return width * height;
 }
-console.log(calculateArea(5,10))
+console.log(calculateArea(5, 10));
 
-const calculateAreaExpression = function(width, height) {
-    return width * height;
+const calculateAreaExpression = function (width, height) {
+	return width * height;
 };
 
 console.log(calculateAreaExpression(5, 10));

@@ -1,8 +1,8 @@
 const person = {
-    firstName: 'Michael',
-    lastName: 'Kvak',
-    age: 37,
-}
+	firstName: 'Michael',
+	lastName: 'Kvak',
+	age: 37,
+};
 
 console.log(person);
 
