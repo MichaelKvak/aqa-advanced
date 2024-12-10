@@ -1,8 +1,8 @@
 const student = {
-    firstName: 'Michael',
-    lastName: 'Kvak',
-    age: 37,
-    courses: ['mathematics', 'history', 'IT']
+	firstName: 'Michael',
+	lastName: 'Kvak',
+	age: 37,
+	courses: ['mathematics', 'history', 'IT'],
 };
 
-console.log(student)
+console.log(student);
