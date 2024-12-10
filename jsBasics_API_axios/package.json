@@ -1,16 +1,16 @@
 {
-  "name": "jsbasics_axios",
+  "name": "jsbasics_api_axios",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
-    "scripts": {
+  "scripts": {
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "axios": "^1.7.9"
   },
