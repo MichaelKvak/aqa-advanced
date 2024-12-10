@@ -1,9 +1,9 @@
-export default {
-    "^.+\\.[t|j]s$": "babel-jest",
-    testEnvironment: 'node',   
-    watch: true,
-    verbose: true,   
-    revealOn: "run",
-    collectCoverage: true,   
-   
+const config = {
+	testMatch: ['**.spec.js'],
+	testEnvironment: 'node',
+	watch: true,
+	verbose: true,
+	collectCoverage: true,
 };
+
+export default config;

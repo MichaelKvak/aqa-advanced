@@ -1,41 +1,16 @@
-import axios from 'axios';
+const axios = require('axios');
 
-const axiosInstance = create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
-  timeout: 5000,
+const axiosInstance = axios.create({
+	baseURL: 'https://jsonplaceholder.typicode.com',
+	timeout: 5000,
+	headers: {
+		'Content-Type': 'application/json',
+	},
 });
 
-export const get = async (url, data) => {
-  const response = await axiosInstance.get(url, data);
-  return response;
-};
+const get = (url, params) => axiosInstance.get(url, { params });
+const post = (url, data) => axiosInstance.post(url, data);
+const put = (url, data) => axiosInstance.put(url, data);
+const del = (url) => axiosInstance.delete(url);
 
-export const post = async (url, data) => {
-  const response = await axios.post(url, data);
-  return response;
-};
-
-
-axiosInstance.interceptors.request.use(
-  (config) => {
-    console.log(`[Request] ${config.method.toUpperCase()} ${config.url}`, config.data || '');
-    return config;
-  },
-  (error) => {
-    console.error('[Request Error]', error.message);
-    return Promise.reject(error);
-  }
-);
-
-axiosInstance.interceptors.response.use(
-  (response) => {
-    console.log(`[Response] ${response.status}`, response.data);
-    return response;
-  },
-  (error) => {
-    console.error('[Response Error]', error.message);
-    return Promise.reject(error);
-  }
-);
-
-export default axiosInstance;
+module.exports = { get, post, put, del };
