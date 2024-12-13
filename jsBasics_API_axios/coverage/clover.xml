@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1734096771092" clover="3.2.0">
-  <project timestamp="1734096771092" name="All files">
-    <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2" elements="15" coveredelements="9" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="axiosInstance.js" path="/home/michael/project/Hillel/aqa-advanced/jsBasics_API_axios/src/axiosInstance.js">
-      <metrics statements="11" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
+<coverage generated="1734098463232" clover="3.2.0">
+  <project timestamp="1734098463232" name="All files">
+    <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="16" coveredelements="16" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
+    <file name="apiControllers.js" path="/home/michael/project/Hillel/aqa-advanced/jsBasics_API_axios/controllers/apiControllers.js">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="18" count="4" type="stmt"/>
-      <line num="21" count="0" type="stmt"/>
-      <line num="22" count="0" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="28" count="4" type="stmt"/>
-      <line num="32" count="4" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="40" count="0" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
