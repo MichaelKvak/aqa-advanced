@@ -1,8 +1,8 @@
-const { get, post, put, del } = require('../src/axiosInstance');
+import axiosInstance from '../src/axiosInstance';
 
 describe('API Tests', () => {
 	test('GET - return a list of posts', async () => {
-		const response = await get('/posts');
+		const response = await axiosInstance.get('/posts');
 		expect(response.status).toBe(200);
 		expect(Array.isArray(response.data)).toBe(true);
 		expect(response.data.length).toBeGreaterThan(0);
@@ -15,7 +15,7 @@ describe('API Tests', () => {
 			userId: 77,
 		};
 
-		const response = await post('/posts', newPost);
+		const response = await axiosInstance.post('/posts', newPost);
 		expect(response.status).toBe(201);
 		expect(response.data).toMatchObject(newPost);
 	});
@@ -28,13 +28,13 @@ describe('API Tests', () => {
 			userId: 1,
 		};
 
-		const response = await put('/posts/1', updatedPost);
+		const response = await axiosInstance.put('/posts/1', updatedPost);
 		expect(response.status).toBe(200);
 		expect(response.data).toMatchObject(updatedPost);
 	});
 
 	test('DELETE - delete the post', async () => {
-		const response = await del('/posts/1');
+		const response = await axiosInstance.delete('/posts/1');
 		expect(response.status).toBe(200);
 	});
 });
